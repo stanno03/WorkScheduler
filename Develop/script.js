@@ -1,37 +1,34 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+$(function () {
 
-$(function() {
+$(".time-block").each(function (){
+  currentBlock = parseInt($(this).attr("id"));
+  currentTime = parseInt(dayjs().format('h'));
 
- // var currentDateTime = dayjs().format('dddd, MMMM, DD');
-    // $('#currentDay').text(currentDateTime);
+  if(currentBlock == currentTime) {
+    $(this).addClass("present");
+  }
+  else if(currentBlock > currentTime) {
+    $(this).addClass("future");
+  } 
+  else{
+  $(this).addClass("past");
+ };
 
-  $(".saveBtn").on("click", function () {
+});
 
-    // traverse DOM to get the elements for time block and the user input value
-    var tasks = $(this).siblings(".description").val();
-    var thisHour = $(this).parent().attr("id")
+  
+$(".saveBtn").on('click', function (){
 
-    // save to local storage as key-value
-    localStorage.setItem(thisHour, tasks);
+  var tasks = $(this).siblings(".description").val();
+  var thisHour = $(this).parent().attr("id");
 
-    // apply background color depending on whether the time block is past/present/future.
-     
-      $("#block").each(function () {
-        currentBlock = $(this).parent().attr("id");
-        currentTime = dayjs().format(h);
+  localStorage.setItem(thisHour, tasks);
+});
 
-        if (currentBlock === currentTime) {
-          $(this).applyClass("present");
-        }
-        else if (currentBlock > currentTime) {
-          $(this).applyClass("future");
-        }
-        else (currentBlock < currentTime) 
-          $(this).applyClass("past");
-        
-      });
-    
-  });
+
+
+
 });
