@@ -20,6 +20,6 @@ to local storage and then the values are displayed in the time block. When the b
 </ol> -->
 
 ## Links to the application:
-Repository: [GitHub](https://github.com/stanno03/PasswordGenerator2.0)
+Repository: [GitHub](https://github.com/stanno03/WorkScheduler)
 
-Deployed via GitHub Pages: [GitHubPages](https://stanno03.github.io/PasswordGenerator2.0/)
+Deployed via GitHub Pages: [GitHubPages](https://stanno03.github.io/WorkScheduler/)

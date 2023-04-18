@@ -7,7 +7,7 @@ $(function () {
 // could use data-number?
   $(".time-block").each(function () {
     currentBlock = parseInt($(this).attr("id"));
-    currentTime = parseInt(dayjs().format('h'));
+   currentTime = parseInt(dayjs().format('HH'));
 
     // remove a class if there is one already applied then apply the correct one.
     if (currentBlock === currentTime) {
