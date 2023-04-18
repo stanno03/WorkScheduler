@@ -43,20 +43,21 @@ $(function () {
   });
 
   // use dayjs to get the current time and then change the format to the required format and then display.
-  var currentDateTime = dayjs().format('dddd, MMMM, DD');
-  $('#currentDay').text(currentDateTime);
+  var currentDate = dayjs().format('dddd, MMMM, DD');
+  $('#currentDay').text(currentDate);
 
   // get the user input that was save in localstorage and set the values of the corresponding textarea elements.
   // when the page is refreshed the user input should stay in the realtiv textarea.
   // use a specific id so the user input saves to the correct block
-  $('#block9 .description').val(localStorage.getItem("9"));
-  $('#block10 .description').val(localStorage.getItem("10"));
-  $('#block11 .description').val(localStorage.getItem("11"));
-  $('#block12 .description').val(localStorage.getItem("12"));
-  $('#block1 .description').val(localStorage.getItem("1"));
-  $('#block2 .description').val(localStorage.getItem("2"));
-  $('#block3 .description').val(localStorage.getItem("3"));
-  $('#block4 .description').val(localStorage.getItem("4"));
-  $('#block5 .description').val(localStorage.getItem("5"));
-
+ 
 });
+
+$("#block9").val(localStorage.getItem("9"));
+$("#block10").val(localStorage.getItem('10'));
+$('#block11').val(localStorage.getItem('11'));
+$('#block12').val(localStorage.getItem('12'));
+$('#block13').val(localStorage.getItem("13"));
+$('#block14').val(localStorage.getItem("14"));
+$('#block15').val(localStorage.getItem("15"));
+$('#block16').val(localStorage.getItem("16"));
+$('#block17').val(localStorage.getItem("17"));
