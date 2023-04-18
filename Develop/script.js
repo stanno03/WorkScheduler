@@ -42,6 +42,12 @@ $(function () {
     localStorage.setItem(thisHour, tasks);
   });
 
+$(".deleteBtn").on('click', function(event){
+var clickedButton = $(this).parent().attr("id")
+localStorage.removeItem(clickedButton);
+location.reload();
+});
+
   // use dayjs to get the current time and then change the format to the required format and then display.
   var currentDate = dayjs().format('dddd, MMMM, DD');
   $('#currentDay').text(currentDate);
@@ -50,14 +56,16 @@ $(function () {
   // when the page is refreshed the user input should stay in the realtiv textarea.
   // use a specific id so the user input saves to the correct block
  
+  $("#block9").val(localStorage.getItem("9"));
+  $("#block10").val(localStorage.getItem('10'));
+  $('#block11').val(localStorage.getItem('11'));
+  $('#block12').val(localStorage.getItem('12'));
+  $('#block13').val(localStorage.getItem("13"));
+  $('#block14').val(localStorage.getItem("14"));
+  $('#block15').val(localStorage.getItem("15"));
+  $('#block16').val(localStorage.getItem("16"));
+  $('#block17').val(localStorage.getItem("17"));
+  
+
 });
 
-$("#block9").val(localStorage.getItem("9"));
-$("#block10").val(localStorage.getItem('10'));
-$('#block11').val(localStorage.getItem('11'));
-$('#block12').val(localStorage.getItem('12'));
-$('#block13').val(localStorage.getItem("13"));
-$('#block14').val(localStorage.getItem("14"));
-$('#block15').val(localStorage.getItem("15"));
-$('#block16').val(localStorage.getItem("16"));
-$('#block17').val(localStorage.getItem("17"));

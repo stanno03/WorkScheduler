@@ -57,3 +57,21 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.saveBtn.delete{
+
+  border-radius: 0px;
+}
+
+.deleteBtn{
+  border-left: 1px solid black;
+  background-color: #06aed5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.deleteBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
