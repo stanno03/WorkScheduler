@@ -10,14 +10,6 @@ to local storage and then the values are displayed in the time block. When the b
 ![Application Landing Page](/Assets/mockup.png)
 
 
-<!-- ## To Do:
-<ol>
-  <li></li>
-  <li></li>
-  <li> </li>
-  <li></li>
-  <li>/li>
-</ol> -->
 
 ## Links to the application:
 Repository: [GitHub](https://github.com/stanno03/WorkScheduler)
